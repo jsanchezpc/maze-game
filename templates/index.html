@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="shortcut icon" href="static/img/all3D.png" type="image/x-icon">
+</head>
+
+<body>
+    <div style="background-image: url({{bg}});" id="maze">
+        <div class="resetd">
+            <a href="/reset" id="reset">RESET</a>
+        </div>
+        <div id="controls">
+            <p>Controls</p>
+            <form action="/move" method="post">
+                <button class="btn forward" name="direction" value="FORWARD" type="submit">⬆</button>
+                <br>
+                <button class="btn left" name="direction" value="LEFT" type="submit">⬅</button>
+                <button class="btn right" name="direction" value="RIGHT" type="submit">➡</button>
+                <br>
+                <br>
+                <button class="btn back" name="direction" value="BACK" type="submit">BACK</button>
+                <br>
+                <br>
+            </form>
+        </div>
+        <div id="steps">
+            <h2>Steps: <u>{{ steps }}</u></h2>
+        </div>
+        <div id="path">
+            <h2>Positions</h2>
+            <ul>
+                {{ path }}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

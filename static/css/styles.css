@@ -1,0 +1,99 @@
+body {
+    margin: 0%;
+}
+
+div.resetd {
+    background-color: black;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+}
+
+div.resetd a#reset {
+    text-decoration: none;
+    color: red;
+}
+
+div#maze {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div#controls {
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(51, 11, 73);
+    border-radius: 500px;
+    width: fit-content;
+    padding: 15px;
+}
+
+div#controls p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div#controls .btn {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-color: white;
+    border-width: 1px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+div#controls .btn:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border-color: red;
+}
+
+div#controls .back {
+    margin-left: 7px;
+}
+
+div#controls .forward {
+    margin-left: 23px;
+}
+
+div#steps {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    padding: 25px;
+    background-color: rgba(128, 128, 128, 0.151);
+    width: fit-content;
+    border-radius: 13px;
+}
+
+div#steps h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div#path {
+    position: absolute;
+    top: 70%;
+    right: 50px;
+    padding: 25px;
+    background-color: rgba(128, 128, 128, 0.151);
+    width: fit-content;
+    border-radius: 13px;
+}
+
+div#path {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
